@@ -10,12 +10,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
-    // your routes here
-  ]
-})
-
-const routes = [
-  {
+    {
     path: '/',
     name: 'Home',
     component: HomeView
@@ -40,11 +35,40 @@ const routes = [
     name: 'AddBook',
     component: AddBookView
   }
-]
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes
+  ]
 })
+
+// const routes = [
+//   {
+//     path: '/',
+//     name: 'Home',
+//     component: HomeView
+//   },
+//   {
+//     path: '/about',
+//     name: 'About',
+//     component: AboutView
+//   },
+//   {
+//     path: '/FireLogin',
+//     name: 'FireLogin',
+//     component: FirebaseSigninView
+//   },
+//   {
+//     path: '/FireRegister',
+//     name: 'FireRegister',
+//     component: FirebaseRegisterView
+//   },
+//   {
+//     path: '/addbook',
+//     name: 'AddBook',
+//     component: AddBookView
+//   }
+// ]
+
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes
+// })
 
 export default router
